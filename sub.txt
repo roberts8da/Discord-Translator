@@ -4,4 +4,4 @@ translateApiUrl=https://libretranslate.com
 translateApiKey=
 botStatus=offline
 commandPrefix=!
-supportedLanguages=zh,en,ja,ko,fr,de,es,ru
+supportedLanguages=en,ja,ko,fr,de,es,ru
