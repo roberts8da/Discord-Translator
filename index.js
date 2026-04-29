@@ -71,7 +71,7 @@ let config = {
   translateApiKey: '',
   botStatus: 'offline',
   commandPrefix: '!',
-  supportedLanguages: ['zh', 'en', 'ja', 'ko', 'fr', 'de', 'es', 'ru']
+  supportedLanguages: ['en', 'ja', 'ko', 'fr', 'de', 'es', 'ru']
 };
 
 // Load config file
@@ -148,7 +148,7 @@ app.use(express.static(__dirname));
 let client = null;
 
 // Translation function
-async function translate(text, targetLang = 'zh', sourceLang = 'auto') {
+async function translate(text, targetLang = 'en', sourceLang = 'auto') {
   try {
     const url = `${config.translateApiUrl}/translate`;
     const headers = { 'Content-Type': 'application/json' };
@@ -251,7 +251,7 @@ function startBot() {
             fields: [
               { name: '📌 Basic Command', value: `\`${prefix}translate <language> <text>\` or \`${prefix}tr <language> <text>\``, inline: false },
               { name: '🌐 Supported Languages', value: config.supportedLanguages.join(', '), inline: false },
-              { name: '💡 Example', value: `\`${prefix}tr zh Hello world\``, inline: false }
+              { name: '💡 Example', value: `\`${prefix}tr en Hello world\``, inline: false }
             ]
           }]
         });
