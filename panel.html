@@ -868,8 +868,8 @@ body {
               Supported Language Codes
             </label>
             <textarea id="languages" name="supportedLanguages" 
-              rows="2" readonly>zh, en, ja, ko, fr, de, es, ru</textarea>
-            <span class="form-hint">Comma-separated, e.g.: zh, en, ja, ko</span>
+              rows="2" readonly>en, ja, ko, fr, de, es, ru</textarea>
+            <span class="form-hint">Comma-separated, e.g.: en, ja, ko</span>
           </div>
           
           <div class="form-actions" id="form-actions" style="display: none;">
@@ -951,8 +951,8 @@ body {
           <div class="command-examples">
             <div class="example-title">💡 Command Examples</div>
             <div class="example-list">
-              <code>!tr zh Hello world</code>
-              <code>!translate en 你好</code>
+              <code>!tr en Hello world</code>
+              <code>!translate en Hello</code>
               <code>!help</code>
             </div>
           </div>
@@ -1078,7 +1078,7 @@ body {
       document.getElementById('api-url').value = config.translateApiUrl || 'https://libretranslate.com';
       document.getElementById('api-key').value = config.translateApiKey || '';
       document.getElementById('prefix').value = config.commandPrefix || '!';
-      document.getElementById('languages').value = config.supportedLanguages ? config.supportedLanguages.join(', ') : 'zh, en, ja, ko, fr, de, es, ru';
+      document.getElementById('languages').value = config.supportedLanguages ? config.supportedLanguages.join(', ') : 'en, ja, ko, fr, de, es, ru';
       
       document.getElementById('cmd-prefix').textContent = config.commandPrefix || '!';
       document.getElementById('lang-count').textContent = config.supportedLanguages ? config.supportedLanguages.length : 8;
