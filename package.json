@@ -13,7 +13,7 @@
     "translator",
     "translation"
   ],
-  "author": "Losy",
+  "author": "dooley",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1",
